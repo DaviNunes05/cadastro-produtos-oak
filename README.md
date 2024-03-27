@@ -15,4 +15,6 @@
 
 3. **Levantamento do Servidor**: Após a instalação das dependências, execute o comando `npm start` para levantar o servidor. Isso iniciará tanto a aplicação Node.js quanto o JSON Server para simular o banco de dados.
 
-4. **Feedback**: Caso tenha alguma dúvida ou problema durante o teste, entre em contato com a equipe de recrutamento da Oak Tecnologia.
+4. **Live Server**: Utilize a extensão "Live Server" caso esteja utilizando o VS Code para realizar os testes na página.   
+
+5. **Feedback**: Caso tenha alguma dúvida ou problema durante o teste, entre em contato com a equipe de recrutamento da Oak Tecnologia.
