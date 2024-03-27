@@ -1,27 +1,31 @@
 const apiUrl = 'http://localhost:3000/produtos';
 
-const buscarProdutos = async () => {
+const buscarProdutosAPI = async () => {
     try {
         const response = await axios.get(apiUrl);
-        const produtosFormatados = response.data.map(produto => ({
-            id: parseInt(produto.id),
-            nome: produto.nome,
-            valor: parseFloat(produto.valor).toFixed(2)
-        }));
-
-        produtosFormatados.sort((produtoA, produtoB) => {
-            return produtoA.valor - produtoB.valor;
-        });
-
-        return produtosFormatados;
+        return response.data;
     } catch (error) {
-        console.error('Erro ao buscar produtos:', error);
+        console.error('Erro ao buscar produtos da API:', error);
         return [];
     }
 };
 
+const formatarProdutos = (produtos) => {
+    return produtos.map(produto => ({
+        id: parseInt(produto.id),
+        nome: produto.nome,
+        valor: parseFloat(produto.valor).toFixed(2)
+    })).sort((produtoA, produtoB) => produtoA.valor - produtoB.valor);
+};
+
+const buscarEFormatarProdutos = async () => {
+    const produtosAPI = await buscarProdutosAPI();
+    return formatarProdutos(produtosAPI);
+};
+
+
 const carregarProdutosNaTabela = async () => {
-    const produtos = await buscarProdutos();
+    const produtos = await buscarEFormatarProdutos();
     const tabelaProduto = document.getElementById('tabelaProduto').getElementsByTagName('tbody')[0];
     produtos.forEach(produto => {
         const novaLinha = tabelaProduto.insertRow();
