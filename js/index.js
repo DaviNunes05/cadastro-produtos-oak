@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const disponivelProduto = document.getElementById("disponivelProduto").value;
 
         const novoProduto = {
-            id: Math.floor(Math.random() * 10000),
+            id: Math.floor(Math.random() * 10000).toString(),
             nome: nomeProduto,
             descricao: descricaoProduto,
             valor: valorProduto,
