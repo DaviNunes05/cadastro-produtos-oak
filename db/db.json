@@ -1,0 +1,39 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camiseta",
+      "descricao": "Camiseta de algodão com estampa",
+      "valor": 25.99,
+      "disponivelParaVenda": true
+    },
+    {
+      "id": 2,
+      "nome": "Tênis",
+      "descricao": "Tênis esportivo leve e confortável",
+      "valor": 59.99,
+      "disponivelParaVenda": false
+    },
+    {
+      "id": 3,
+      "nome": "Calça Jeans",
+      "descricao": "Calça jeans de corte reto e lavagem clara",
+      "valor": 45.50,
+      "disponivelParaVenda": true
+    },
+    {
+      "id": 4,
+      "nome": "Relógio",
+      "descricao": "Relógio analógico com pulseira de couro",
+      "valor": 79.90,
+      "disponivelParaVenda": true
+    },
+    {
+      "id": 5,
+      "nome": "Bolsa",
+      "descricao": "Bolsa feminina em couro sintético",
+      "valor": 35.75,
+      "disponivelParaVenda": false
+    }
+  ]
+}

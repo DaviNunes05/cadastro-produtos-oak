@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#tabelaProduto {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabelaProduto th,
+#tabelaProduto td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabelaProduto th {
+    background-color: #f2f2f2;
+}
+
+#tabelaProduto td:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tabelaProduto td:last-child span {
+    cursor: pointer;
+}
+
+#tabelaProduto td:last-child span i {
+    margin: 0 5px;
+}
+
+#tabelaProduto td:last-child span:hover {
+    color: #007bff;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
