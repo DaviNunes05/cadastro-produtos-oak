@@ -34,13 +34,6 @@
       "descricao": "Bolsa feminina em couro sintético",
       "valor": 35.75,
       "disponivelParaVenda": false
-    },
-    {
-      "id": "5db5",
-      "nome": "Teste",
-      "descricao": "testando",
-      "valor": "1.00",
-      "disponivel": true
     }
   ]
 }
